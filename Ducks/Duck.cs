@@ -28,9 +28,24 @@ namespace StrategyPattern.Ducks
         {
             FlyBehavior.Fly();
         }
+
         public void PerformSwim()
         {
             SwimBehavior.Swim();
+        }
+
+        public void SetFlyBehavior(FlyBehavior flyBehavior)
+        {
+            FlyBehavior = flyBehavior;
+        }
+        public void SetQuackBehavior(QuackBehavior quackBehavior)
+        {
+            QuackBehavior = quackBehavior;
+        }
+
+        public void SetSwimBehavior(SwimBehavior swimBehavior)
+        {
+            SwimBehavior = swimBehavior;
         }
     }
 }
